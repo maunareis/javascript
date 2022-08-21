@@ -9,25 +9,21 @@
 </head>
 <body>
     <h1>Desafio das Mensagens</h1>
-    <button id="bt1" onclick="clicar1">
+    <button id="bt1" onclick="clicar1()">
         Botão 1
     </button>
-    <button id="bt2" onclick="clicar2">
+    <button id="bt2" onclick="clicar2()">
         Botão 2
     </button>
-    <button id="bt3" onclick="clicar3">
+    <button id="bt3" onclick="clicar3()">
         Botão 3
     </button>
 
-    <div id="res">
-        Sua escolha
-    </div>
-
     <script>
-        var res = document.getElementById('res')
-
+        
         function clicar1(){
-            res.innerHTML='Clicou no Botão 1'
+            var res ='Clicou no Botão 1'
+            window.confirm(res)
         }
 
         function clicar2(){
