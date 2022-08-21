@@ -34,12 +34,17 @@
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado.</p>
+    <p id="res"><strong>Aqui vai o resultado.</strong></p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <button>Clique em mim</button>
+    <button onclick="clicar()">Clique em mim</button>
     <script>
-        var p1 = document.getElementsByTagName('p')[0]
-        document.write(p1.innerHTML)
+        // var p1 = document.getElementsByTagName('p')[0]
+        // document.write(p1.innerHTML)
+        var res = window.document.querySelector('p#res')
+        function clicar() {
+            res.innerHTML = 'Você clicou no Botão'
+            res.style.color= 'red'
+        }
     </script>
 </body>
 </html>
