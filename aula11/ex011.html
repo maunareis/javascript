@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nação</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(241, 236, 230);
+        }
+
+        h1{
+            margin-top: 10vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p{
+            font-size: 25px;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        input[type="text"]{
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        input[type="button"]{
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 20px;
+
+        }
+
+        div#res{
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Qual seu país de origem:</p> <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Status" onclick="averiguar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function averiguar() {
+            var nac = window.document.querySelector('input#txtp')
+            var res = window.document.querySelector('div#res')
+            var n = String(nac.value)
+
+            if (n == 'Brasil') {
+                 res.innerHTML = 'Você é Brasileiro'
+            } else {
+                 res.innerHTML = 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
