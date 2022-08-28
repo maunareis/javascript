@@ -3,3 +3,6 @@ function verificar(){
     var ano = data.getFullYear()
     //var idade = document.getElementById('txtano')
 }
+
+
+//
