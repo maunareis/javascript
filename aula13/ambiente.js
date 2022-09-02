@@ -3,10 +3,7 @@ do{
     console.log(`Passo ${c}`)
     c++
 } while(c<=400)
-    
 
-    
-    
  /*
  var c = 1
 while(c<=500){
