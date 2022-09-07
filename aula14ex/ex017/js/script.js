@@ -1,24 +1,18 @@
 function gerar(){
-    var n = document.querySelector('input#num')
-
-    if (n.value.length == 0){
+    let num = document.querySelector('input#txtn')
+    let tab = document.getElementById('seltab')
+    if (num.value.length == 0){
         window.alert(`Por favor, digite um número!`)
     } else {
-            while (c<=10){
-                var mult = n.value 
-                var res = mult * c
-                res.innerHTML = `${res}`
+        let n = Number(num.value)
+        let c = 1
+        tab.innerHTML = ''
+        while( c <= 10){
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            c++
+        }
             }
-    }
-
-       // res.innerHTML = n.value
-    }
-
-
-/*
-for(var c = 1; c = 10; c++){
-                var res = n.value * c
-                res.innerHTML = res
-                */
-
-
+}
